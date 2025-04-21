@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поездки</title>
+    <link rel="stylesheet" href="trips.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/ec634935c4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="headler">
+            <div class="selectedTrips">Поездки</div>
+            <div class="person">
+                <button class="personButton" type="submit">Заболоцкий К.О. <img class="outImage"
+                        src="img/Vector.png"></button>
+            </div>
+        </div>
+    </header>
+    <div class="myTrips">
+        <p class="myTripsText">Мои поездки</p>
+        <button class="designTrip">+ Оформить поездку</button>
+    </div>
+    <div class="period">
+        <form class="dateFrom">
+            <p class="dateFromFormText">
+                Период с:
+                <input class="dateFromForm" type="date" placeholder="Выбрать..." name="calendar" id="calendar">
+            </p>
+        </form>
+        <form class="dateTo">
+            <p class="dateToFormText">
+                по:
+                <input class="dateToForm" type="date" name="calendar" id="calendar">
+            </p>
+        </form>
+        <form class="search">
+            <input class="searchForm" type="text" placeholder="Поиск...">
+            <button class="searchFormButton" type="submit"></button>
+        </form>
+        <div class="clear">
+            <button class="clearButton" type="submit">Сбросить все</button>
+        </div>
+
+        <form class="showArchiveTrips">
+            <input id="showArchiveTrip" type="checkbox">
+            <label for="showArchiveTrip">Показать архивные поездки</label>
+        </form>
+    </div>
+    <br>
+    <div class="lines">
+        <div class="lineLeft">
+        </div>
+        <div class="lineRight">
+        </div>
+    </div>
+    <br>
+    <div class="gridTrips">
+        <div class="gridTripsUp">
+            <div class="gridItemNumberOfTrip">№ поездки</div>
+            <div class="gridItemDateOfTrip">Дата поездки</div>
+            <div class="gridItemSumPlan">Сумма, план</div>
+            <div class="gridItemSumFact">Сумма, факт</div>
+            <div class="gridItemCity">Город</div>
+            <div class="gridItemNoInfo"></div>
+            <div class="gridItemStatus">Статус</div>
+        </div>
+        <div class="gridTripsDown">
+            <div class="gridItemNumberOfTripDown">000115</div>
+            <div class="gridItemDateOfTrip">22.02.2024 - 27.02.224</div>
+            <div class="gridItemSumPlan">29 400,00</div>
+            <div class="gridItemSumFact">29 400,00</div>
+            <div class="gridItemCity">Москва, Ярославль, Ижевск, Владимир</div>
+            <div class="gridItemNoInfo"></div>
+            <div class="gridItemStatusDown">Документы</div>
+        </div>
+    </div>
+    <br>
+    <div class="gridTrips">
+        <div class="gridTripsUp">
+            <div class="gridItemNumberOfTrip">№ поездки</div>
+            <div class="gridItemDateOfTrip">Дата поездки</div>
+            <div class="gridItemSumPlan">Сумма, план</div>
+            <div class="gridItemSumFact">Сумма, факт</div>
+            <div class="gridItemCity">Город</div>
+            <div class="gridItemNoInfo"></div>
+            <div class="gridItemStatus">Статус</div>
+        </div>
+        <div class="gridTripsDown">
+            <div class="gridItemNumberOfTripDown">000117</div>
+            <div class="gridItemDateOfTrip">22.02.2024 - 27.02.224</div>
+            <div class="gridItemSumPlan">29 400,00</div>
+            <div class="gridItemSumFact">29 400,00</div>
+            <div class="gridItemCity">Москва</div>
+            <div class="gridItemNoInfo"></div>
+            <div class="gridItemStatusDown">Документы</div>
+        </div>
+    </div>
+    <br>
+    <div class="gridTrips">
+        <div class="gridTripsUp">
+            <div class="gridItemNumberOfTrip">№ поездки</div>
+            <div class="gridItemDateOfTrip">Дата поездки</div>
+            <div class="gridItemSumPlan">Сумма, план</div>
+            <div class="gridItemSumFact">Сумма, факт</div>
+            <div class="gridItemCity">Город</div>
+            <div class="gridItemNoNoInfo"></div>
+            <div class="gridItemStatus">Статус</div>
+        </div>
+        <div class="gridTripsDown">
+            <div class="gridItemNumberOfTripDown">000074</div>
+            <div class="gridItemDateOfTrip">22.02.2024 - 27.02.224</div>
+            <div class="gridItemSumPlan">29 400,00</div>
+            <div class="gridItemSumFact">29 400,00</div>
+            <div class="gridItemCity">Кременчуг-Константиновское, Петропавловск-Камчатский, Новосибирск, Волгоград,
+                Саратов</div>
+            <div class="gridItemInfo">
+                <div class="bigText">Кременчуг-Константиновское, Петропавловск-Камчатскийосибирск, Новосибирск,
+                    Волгоград, Саратов</div>
+            </div>
+            <div class="gridItemStatusDown">Документы</div>
+        </div>
+    </div>
+    <br>
+    <div class="gridTrips">
+        <div class="gridTripsUp">
+            <div class="gridItemNumberOfTrip">№ поездки</div>
+            <div class="gridItemDateOfTrip">Дата поездки</div>
+            <div class="gridItemSumPlan">Сумма, план</div>
+            <div class="gridItemSumFact">Сумма, факт</div>
+            <div class="gridItemCity">Город</div>
+            <div class="gridItemNoInfo"></div>
+            <div class="gridItemStatus">Статус</div>
+        </div>
+        <div class="gridTripsDown">
+            <div class="gridItemNumberOfTripDown">000115</div>
+            <div class="gridItemDateOfTrip">22.02.2024 - 27.02.224</div>
+            <div class="gridItemSumPlan">29 400,00</div>
+            <div class="gridItemSumFact">29 400,00</div>
+            <div class="gridItemCity">Москва, Ярославль, Ижевск, Владимир</div>
+            <div class="gridItemNoInfo"></div>
+            <div class="gridItemStatusDown">Документы</div>
+        </div>
+    </div>
+    <br>
+    <div class="gridTrips">
+        <div class="gridTripsUp">
+            <div class="gridItemNumberOfTrip">№ поездки</div>
+            <div class="gridItemDateOfTrip">Дата поездки</div>
+            <div class="gridItemSumPlan">Сумма, план</div>
+            <div class="gridItemSumFact">Сумма, факт</div>
+            <div class="gridItemCity">Город</div>
+            <div class="gridItemNoInfo"></div>
+            <div class="gridItemStatus">Статус</div>
+        </div>
+        <div class="gridTripsDown">
+            <div class="gridItemNumberOfTripDown">000211</div>
+            <div class="gridItemDateOfTrip">22.02.2024 - 27.02.224</div>
+            <div class="gridItemSumPlan">29 400,00</div>
+            <div class="gridItemSumFact">29 400,00</div>
+            <div class="gridItemCity">Москва, Ярославль, Ижевск, Владимир</div>
+            <div class="gridItemNoInfo"></div>
+            <div class="gridItemStatusDown">Документы</div>
+        </div>
+    </div>
+    <br>
+    <div class="gridTrips">
+        <div class="gridTripsUp">
+            <div class="gridItemNumberOfTrip">№ поездки</div>
+            <div class="gridItemDateOfTrip">Дата поездки</div>
+            <div class="gridItemSumPlan">Сумма, план</div>
+            <div class="gridItemSumFact">Сумма, факт</div>
+            <div class="gridItemCity">Город</div>
+            <div class="gridItemNoInfo"></div>
+            <div class="gridItemStatus">Статус</div>
+        </div>
+        <div class="gridTripsDown">
+            <div class="gridItemNumberOfTripDown">000118</div>
+            <div class="gridItemDateOfTrip">22.02.2024 - 27.02.224</div>
+            <div class="gridItemSumPlan">29 400,00</div>
+            <div class="gridItemSumFact">29 400,00</div>
+            <div class="gridItemCity">Москва, Ярославль, Ижевск, Владимир</div>
+            <div class="gridItemNoInfo"></div>
+            <div class="gridItemStatusDown">Документы</div>
+        </div>
+    </div>
+    <br>
+    <div class="gridTrips">
+        <div class="gridTripsUp">
+            <div class="gridItemNumberOfTrip">№ поездки</div>
+            <div class="gridItemDateOfTrip">Дата поездки</div>
+            <div class="gridItemSumPlan">Сумма, план</div>
+            <div class="gridItemSumFact">Сумма, факт</div>
+            <div class="gridItemCity">Город</div>
+            <div class="gridItemNoInfo"></div>
+            <div class="gridItemStatus">Статус</div>
+        </div>
+        <div class="gridTripsDown">
+            <div class="gridItemNumberOfTripDown">000119</div>
+            <div class="gridItemDateOfTrip">22.02.2024 - 27.02.224</div>
+            <div class="gridItemSumPlan">29 400,00</div>
+            <div class="gridItemSumFact">29 400,00</div>
+            <div class="gridItemCity">Москва, Ярославль, Ижевск, Владимир</div>
+            <div class="gridItemNoInfo"></div>
+            <div class="gridItemStatusDown">Документы</div>
+        </div>
+    </div>
+    <br>
+    <div class="gridTrips">
+        <div class="gridTripsUp">
+            <div class="gridItemNumberOfTrip">№ поездки</div>
+            <div class="gridItemDateOfTrip">Дата поездки</div>
+            <div class="gridItemSumPlan">Сумма, план</div>
+            <div class="gridItemSumFact">Сумма, факт</div>
+            <div class="gridItemCity">Город</div>
+            <div class="gridItemNoInfo"></div>
+            <div class="gridItemStatus">Статус</div>
+        </div>
+        <div class="gridTripsDown">
+            <div class="gridItemNumberOfTripDown">000120</div>
+            <div class="gridItemDateOfTrip">22.02.2024 - 27.02.224</div>
+            <div class="gridItemSumPlan">29 400,00</div>
+            <div class="gridItemSumFact">29 400,00</div>
+            <div class="gridItemCity">Москва, Ярославль, Ижевск, Владимир</div>
+            <div class="gridItemNoInfo"></div>
+            <div class="gridItemStatusDown">Документы</div>
+        </div>
+    </div>
+    <br>
+    <div class="gridTrips">
+        <div class="gridTripsUp">
+            <div class="gridItemNumberOfTrip">№ поездки</div>
+            <div class="gridItemDateOfTrip">Дата поездки</div>
+            <div class="gridItemSumPlan">Сумма, план</div>
+            <div class="gridItemSumFact">Сумма, факт</div>
+            <div class="gridItemCity">Город</div>
+            <div class="gridItemNoInfo"></div>
+            <div class="gridItemStatus">Статус</div>
+        </div>
+        <div class="gridTripsDown">
+            <div class="gridItemNumberOfTripDown">000133</div>
+            <div class="gridItemDateOfTrip">22.02.2024 - 27.02.224</div>
+            <div class="gridItemSumPlan">29 400,00</div>
+            <div class="gridItemSumFact">29 400,00</div>
+            <div class="gridItemCity">Москва, Ярославль, Ижевск, Владимир</div>
+            <div class="gridItemNoInfo"></div>
+            <div class="gridItemStatusDown">Документы</div>
+        </div>
+    </div>
+    <br>
+
+</body>
+
+</html>

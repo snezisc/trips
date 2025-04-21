@@ -1,0 +1,376 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    background-color: #F6FCFF;
+    width: 1440px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.headler {
+    display: flex;
+    height: 65px;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 300px;
+}
+
+.personButton {
+    background-color: #FFFFFF;
+    border-bottom-width: 0.5px;
+    border-bottom-style: dashed;
+    border-bottom-color: #0e73f641;
+    width: fit-content;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #0E73F6;
+    margin-right: 15px;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.outImage {
+    padding-left: 10px;
+}
+
+.selectedTrips {
+    position: relative;
+    padding-left: 60px;
+    margin-top: 20px;
+}
+
+.selectedTrips::after {
+    content: " ";
+    background: #4094F7;
+    width: 85px;
+    height: 1px;
+    top: 30px;
+    position: absolute;
+    left: 47px;
+}
+
+.designTrip {
+    background-color: #4094F7;
+    border-radius: 4px;
+    border: none;
+    width: 178px;
+    height: 24px;
+    padding-left: 8px;
+    padding-right: 8px;
+    gap: 6px;
+    color: white;
+    font-weight: 500;
+}
+
+.myTrips {
+    display: flex;
+    justify-content: left;
+    gap: 30px;
+    height: 56px;
+    width: 100%;
+    align-items: center;
+    box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+    background-color: #FFFFFF;
+}
+
+.myTripsText {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 20px;
+}
+
+.period {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    height: 48px;
+    width: 100%;
+    font-size: 14px;
+    position: relative;
+}
+
+.lines {
+    display: flex;
+    align-items: left;
+    width: 80%;
+    height: 2px;
+}
+
+.lineLeft {
+    width: 30%;
+    height: 2px;
+    background-color: #4094F7;
+}
+
+.lineRight {
+    width: 60%;
+    height: 2px;
+    background-color: #D7EDFF;
+}
+
+.dateToForm,
+.dateFromForm {
+    width: 160px;
+    height: 32px;
+    border-radius: 6px;
+    border-width: 1px;
+    border-color: #DDE2E4;
+    background-color: #FFFFFF;
+    color: #9AA6AC;
+    margin-left: 10px;
+    padding-right: 5px;
+    padding-left: 10px;
+    position: absolute;
+}
+
+#calendar {
+    color: #B0BABF;
+}
+
+.dateFromFormText {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+
+.dateFromForm {
+    position: absolute;
+    left: 70px;
+    top: -8px;
+}
+
+.dateFromForm::after {
+    content: "\f00d";
+    font-family: "FontAwesome";
+    z-index: 100;
+    position: absolute;
+    left: 137px;
+    top: 16px;
+    height: 18px;
+    background: none;
+    border: none;
+    color: #B0BABF;
+    font-size: 18px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.dateToFormText {
+    position: absolute;
+    left: 295px;
+    top: 10px;
+}
+
+.dateToForm {
+    position: absolute;
+    left: 20px;
+    top: -8px;
+}
+
+.search {
+    position: relative;
+    width: 230px;
+    height: 32px;
+    margin-top: 14px;
+    margin-right: 200px;
+}
+
+.searchForm {
+    width: 100%;
+    height: 32px;
+    background-color: #FFFFFF;
+    padding-left: 15px;
+    color: #DDE2E4;
+    border-radius: 6px;
+    border-color: #DDE2E4;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.searchFormButton {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 6px;
+    right: 0px;
+    background: #FFFFFF;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.searchFormButton:before {
+    content: "\f002";
+    font-family: "FontAwesome";
+    color: #B0BABF;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.clear {
+    position: absolute;
+    align-content: center;
+    padding-top: 25px;
+    right: 530px;
+}
+
+.clearButton {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #4094F7;
+    background-color: #F6FCFF;
+    border-bottom-width: 0.5px;
+    border-bottom-color: #4095f739;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+}
+
+.clearButton::before {
+    content: "\f00d";
+    font-family: "FontAwesome";
+    font-size: 12px;
+    margin-right: 3px;
+}
+
+
+.showArchiveTrips {
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    padding-top: 20px;
+    padding-right: 10px;
+    font-size: 12px;
+}
+
+.gridTrips {
+    width: auto;
+    border-radius: 6px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.gridTripsUp,
+.gridTripsDown,
+.gridItemNumberOfTrip,
+.gridItemDateOfTrip,
+.gridItemSumPlan,
+.gridItemSumFact,
+.gridItemCity,
+.gridItemStatus {
+    background-color: #FFFFFF;
+}
+
+.gridItemStatusDown {
+    background-color: #EEF0F2;
+    color: #5B6871;
+    border-radius: 10px;
+    width: 86px;
+    height: 24px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridItemStatus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.gridTripsUp,
+.gridTripsDown {
+    display: grid;
+    grid-template-columns: 68px 176px 114px 86px 660px 20px 86px;
+    column-gap: 30px;
+}
+
+.gridTripsUp {
+    grid-template-rows: 20px;
+    padding: 16px 5px 10px 20px;
+    font-size: 12px;
+    color: #84919A;
+}
+
+.gridTripsDown {
+    font-size: 14px;
+    grid-template-rows: 24px;
+    padding: 5px 16px 10px 20px;
+    color: #252C32;
+}
+
+.gridItemSumPlan,
+.gridItemSumFact {
+    text-align: right;
+}
+
+.gridItemCity,
+.gridItemCityBig {
+    display: inline;
+    width: 560px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    position: relative;
+}
+
+.gridItemInfo {
+    position: relative;
+}
+
+.gridItemInfo::before {
+    content: "\f05a";
+    font-family: "FontAwesome";
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    color: #84919A;
+    margin-left: -120px;
+}
+
+
+.bigText {
+    display: none;
+    width: 230px;
+    height: auto;
+    background-color: #303940;
+    color: #F6F8F9;
+    text-align: left;
+    border-radius: 4px;
+    padding: 5px;
+    position: absolute;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    margin-top: -80px;
+    margin-left: -122px;
+}
+
+.bigText::after {
+    content: '';
+    position: absolute;
+    left: 7px;
+    bottom: -10px;
+    border: 5px solid transparent;
+    border-top: 5px solid #303940;
+}
+
+.gridItemInfo:hover .bigText {
+    display: block;
+    opacity: 1;
+    z-index: 100;
+}
+
+.gridItemNumberOfTripDown {
+    color: #0E73F6;
+    text-decoration: underline #4095f744;
+}
